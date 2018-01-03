@@ -11,6 +11,10 @@ description: |
   .
   This snap uses a large amount of snap interfaces make sure to connect
   all of them after installing the snap.
+  .
+  Additionally to the usbtop command this snap also ships usbtop.lsusb 
+  (which is by defaut not available on i.e. Ubuntu Core installs) to
+  make it easier to identify the devices that are monitored.
 
 grade: stable
 confinement: devmode
