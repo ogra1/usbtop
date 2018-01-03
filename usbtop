@@ -1,0 +1,19 @@
+#! /bin/sh
+
+# TODO: uncomment once we have a workig interface for 
+# /sys/kernel/debug/usb/usbmon/[0-9]*t
+# set -e
+
+cleanup() {
+  rmmod -fs usbmon
+}
+
+trap cleanup 2 3 9 15
+
+if [ "$(id -u)" != "0" ]; then
+  echo "Please use sudo to run this app"
+  exit 0
+fi
+
+modprobe usbmon
+usbtop.real
