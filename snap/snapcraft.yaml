@@ -33,7 +33,6 @@ apps:
       - bluetooth-control
       - firewall-control
       - hardware-observe
-      - kernel-module-control
       - network
       - network-bind
       - network-control
