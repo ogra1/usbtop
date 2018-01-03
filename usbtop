@@ -15,5 +15,6 @@ if [ "$(id -u)" != "0" ]; then
   exit 0
 fi
 
+# usbmon does not get auto-loaded by the kernel
 modprobe usbmon
 usbtop.real
