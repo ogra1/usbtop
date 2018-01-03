@@ -8,7 +8,7 @@ description: |
   store.
 
 grade: stable
-confinement: strict
+confinement: devmode
 
 apps:
   usbtop:
